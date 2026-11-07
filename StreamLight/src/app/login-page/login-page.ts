@@ -6,4 +6,14 @@ import { Component } from '@angular/core';
   styleUrl: './login-page.scss',
   templateUrl: './login-page.html',
 })
-export class LoginPage {}
+export class LoginPage {
+
+  login() {
+    console.log('Login button clicked');
+
+    if(true){
+      
+    }
+  }
+
+}
