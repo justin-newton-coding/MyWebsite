@@ -1,11 +1,12 @@
 <main class="login-content">
-    <img src="assets/bee.png" alt="Bee Logo" id="bee-logo">
+    <img src="assets/Beehave Logo.svg" alt="Bee Logo" id="bee-logo" width="200" height="200">
     <h1>Bee Happy. Bee Good. Bee Entertained.</h1>
     <div id="login-form">
-        <input type="text" placeholder="Username">
-        <input type="password" placeholder="Password">
+        <input type="text" [(ngModel)]="username" placeholder="Username">
+        <input type="password" [(ngModel)]="password" placeholder="Password">
         <button (click)="login()">Login</button>
     </div>
+    <p [style.visibility]="loginFailed ? 'visible' : 'hidden'">Please enter valid credentials.</p>
 </main>
 
 <p id="disclaimer">Note: The images used in this app are not finalized.</p>
