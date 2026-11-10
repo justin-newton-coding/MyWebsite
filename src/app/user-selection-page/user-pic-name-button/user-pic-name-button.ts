@@ -9,12 +9,8 @@ import { User } from '../../misc-classes/user';
 })
 export class UserPicNameButton {
   @Input() user: User = new User('','');
-  
-  constructor(user: User) {
-    this.user = user;
-  }
 
   onPress() {
-    console.log('UserPicNameButton pressed');
+    console.log(this.user.getName() + ' pressed');
   }
 }
