@@ -14,7 +14,7 @@ export const routes: Routes = [
         title: 'Login',
     },
     {
-        path: 'userselection',
+        path: 'userselection/:accountid',
         component: UserSelectionPage,
         title: 'User Selection',
     }

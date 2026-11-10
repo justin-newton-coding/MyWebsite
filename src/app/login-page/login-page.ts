@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   imports: [FormsModule],
@@ -8,6 +9,7 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './login-page.html',
 })
 export class LoginPage {
+  private router = inject(Router);
 
   username: string = '';
   password: string = '';
@@ -19,7 +21,7 @@ export class LoginPage {
 
     if(this.username == "johncena123" && this.password == "roastchicken") {
       console.log('Login successful');
-      this.loginFailed = false;
+      this.router.navigate(['/userselection', '12345']);
     }
     else {
       console.log('Login failed');

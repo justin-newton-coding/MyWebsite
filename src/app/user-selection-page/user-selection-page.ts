@@ -10,12 +10,13 @@ import { UserPicNameButton } from './user-pic-name-button/user-pic-name-button';
 })
 export class UserSelectionPage {
   userSampleList = [
-    { name: 'User 1', pic: 'user1.png' },
-    { name: 'User 2', pic: 'user2.png' },
-    { name: 'User 3', pic: 'user3.png' }
+    { name: 'User 1', pic: 'John Cena.jpg' },
+    { name: 'User 2', pic: 'Eminem.jpg' },
+    { name: 'User 3', pic: 'Detective Pikachu.jpg' }
   ];
 
   users: User[] = [];
+  accountid: string = '';
 
   constructor() {
     for (const user of this.userSampleList){
