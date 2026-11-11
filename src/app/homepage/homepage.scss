@@ -1,10 +1,23 @@
 #wholewebpage {
     display: flex;
     flex-direction: column;
+    padding: 5%;
+}
+
+#twobytwoobjects {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#twobytwoobjects > div {
+    max-width: 30%
 }
 
 #navbar {
     align-items: center;
+    text-wrap: wrap;
 }
 
 #navigationlist {
