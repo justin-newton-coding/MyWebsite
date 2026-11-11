@@ -19,7 +19,7 @@ export class LoginPage {
   login() {
     console.log('Login button clicked');
 
-    if(this.username == "login" && this.password == "password") {
+    if(this.username == "username" && this.password == "password") {
       console.log('Login successful');
       this.router.navigate(['/userselection', '12345']);
     }

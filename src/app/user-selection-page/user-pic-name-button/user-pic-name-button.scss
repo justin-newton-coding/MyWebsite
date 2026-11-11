@@ -1,0 +1,22 @@
+button {
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    color: white;
+    text-wrap: wrap;
+    border: none;
+}
+
+button:hover {
+    background-color: grey;
+}
+
+button > img {
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    color: white;
+    text-wrap: wrap;
+}

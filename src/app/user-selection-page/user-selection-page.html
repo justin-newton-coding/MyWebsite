@@ -1,11 +1,13 @@
 <h1>Select User</h1>
 
-@for (user of users; track user.name) {
-    <li>
-        <user-pic-name-button [user]="user"/>
-    </li>
-} @empty {
-    <li>
-        <p>No users found.</p>
-    </li>
-}
+<div id="userlist">
+    @for (user of users; track user.name) {
+        <li>
+            <user-pic-name-button [user]="user"/>
+        </li>
+    } @empty {
+        <li>
+            <p>No users found.</p>
+        </li>
+    }
+</div>

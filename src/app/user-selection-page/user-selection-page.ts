@@ -10,10 +10,12 @@ import { UserPicNameButton } from './user-pic-name-button/user-pic-name-button';
 })
 export class UserSelectionPage {
   userSampleList = [
-    { name: 'User 1', pic: 'John Cena.jpg' },
-    { name: 'User 2', pic: 'Eminem.jpg' },
-    { name: 'User 3', pic: 'Detective Pikachu.jpg' }
+    { name: 'John Cena', pic: 'John Cena.jpg' },
+    { name: 'Eminem', pic: 'Eminem.jpg' },
+    { name: 'Ryan Reynolds', pic: 'Detective Pikachu.jpg' }
   ];
+
+  // TODO: 9 should be the max length for a name
 
   users: User[] = [];
   accountid: string = '';
