@@ -38,6 +38,7 @@ yarn-error.log
 testem.log
 /typings
 __screenshots__/
+./deploy.ps1
 
 # System files
 .DS_Store
